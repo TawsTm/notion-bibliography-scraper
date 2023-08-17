@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "allowJs": true,
+      "noImplicitAny": true,
+      "removeComments": false,
+      "preserveConstEnums": true,
+      "inlineSourceMap": true,
+      "declaration": true,
+      //"outDir": "dist",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "target": "es6",
+      "strict": true,
+      "downlevelIteration": true, // to be able to iterate over a Float32Array in audio-setup
+      "jsx": "preserve",
+      "skipLibCheck": true, // to skip the decleration files
+      "lib": [
+        "ES2022",
+        "esnext",
+        "dom"
+      ]
+    },
+    "include": [
+      "src/**/*"
+    ],
+    "exclude": [
+      "node_modules",
+      "dist"
+    ],
+    "jest": {
+      "clearMocks": true,
+      "collectCoverage": true,
+      "coverageDirectory": ".coverage",
+      "roots": [
+        "dist/"
+      ],
+      "testEnvironment": "node"
+    }
+  }

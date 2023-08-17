@@ -1,0 +1,12 @@
+.idea/.gitignore
+.idea/*.xml
+.idea/*.iml
+.idea/inspectionProfiles
+dist
+node_modules
+coverage
+*.tgz
+*.css
+*.map
+*.d.ts
+.vscode
