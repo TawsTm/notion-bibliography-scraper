@@ -1,7 +1,3 @@
-.idea/.gitignore
-.idea/*.xml
-.idea/*.iml
-.idea/inspectionProfiles
 dist
 node_modules
 coverage
