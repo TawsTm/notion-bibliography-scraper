@@ -9,6 +9,16 @@ chrome.runtime.onMessage.addListener((message) => {
       list.appendChild(item);
     }
     );
+
+    // create a button to copy the bibliography to the clipboard
+    const button = document.createElement('button');
+    button.innerText = 'Copy to clipboard';
+    button.addEventListener('click', () => {
+      const text = message.bibliographyList.map((bibliography) => `${bibliography.author} (${bibliography.year}) ${bibliography.title}. ${bibliography.journal}, ${bibliography.volume}, ${bibliography.pages}.`).join('\n');
+      navigator.clipboard.writeText(text);
+    }
+    );
+    document.getElementById('list').appendChild(button);
     document.getElementById('list').appendChild(list);
   }
 });
