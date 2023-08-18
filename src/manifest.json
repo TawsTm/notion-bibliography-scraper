@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Paragraph Counter",
+    "name": "Notion Bibliography",
     "version": "1.0",
-    "description": "Counts <p> tags on the current site.",
+    "description": "Scrapes Literature of a notion database.",
     "permissions": ["activeTab", "scripting"],
     "action": {
       "default_popup": "popup.html",
